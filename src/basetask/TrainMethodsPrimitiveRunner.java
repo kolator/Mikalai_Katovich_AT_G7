@@ -1,4 +1,5 @@
 package basetask;
+
 public class TrainMethodsPrimitiveRunner {
     public static void main(String[] args) {
         short b = 12345;

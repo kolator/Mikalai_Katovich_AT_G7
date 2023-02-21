@@ -24,12 +24,15 @@ public class TrainMethodsReturn {
     public double returnNewDouble(double rni) {
         return rni + 8;
     }
+
     public short returnNewShort(short rni) {
-        return (short) (rni -1);
+        return (short) (rni - 1);
     }
+
     public byte returnNewByte(byte rni) {
         return (byte) (rni * 2);
     }
+
     public boolean returnNewBoolean(boolean rni) {
         return !rni;
     }
