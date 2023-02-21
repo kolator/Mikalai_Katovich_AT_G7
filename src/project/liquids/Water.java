@@ -1,4 +1,4 @@
-package bubbles;
+package project.liquids;
 
 abstract class Water {
     private String color;

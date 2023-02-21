@@ -1,7 +1,6 @@
-package bubbles;
+package project.liquids;
 
-import java.util.Arrays;
-import java.lang.reflect.Array;
+import project.properties.Bubble;
 
 public class SparklingWater extends Water {
     public SparklingWater(String color, double transparency, String smell, double temperature) {

@@ -1,4 +1,4 @@
-package bubbles;
+package project.properties;
 
 public class Bubble {
     private double volume;

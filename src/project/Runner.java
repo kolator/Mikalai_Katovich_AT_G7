@@ -1,4 +1,8 @@
-package bubbles;
+package project;
+
+import project.liquids.SparklingWater;
+import project.packing.Bottle;
+import project.properties.Bubble;
 
 public class Runner {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package homework.task0;
+
 public class Car {
     int maxSpeed;
     int speed;

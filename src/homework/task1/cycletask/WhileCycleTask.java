@@ -1,4 +1,4 @@
-package cycletask;
+package homework.task1.cycletask;
 
 public class WhileCycleTask {
     public static void main(String[] args) {

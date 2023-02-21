@@ -1,4 +1,4 @@
-package basetask;
+package homework.task1.basetask;
 
 public class TrainMethodsIfRunner {
     public static void main(String[] args) {
