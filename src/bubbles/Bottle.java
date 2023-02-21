@@ -8,6 +8,7 @@ public class Bottle {
         this.volume = volume;
 
     }
+
     public void setWater(SparklingWater water) {
         this.water = water;
     }

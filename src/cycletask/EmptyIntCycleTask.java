@@ -45,8 +45,9 @@ public class EmptyIntCycleTask {
             if (arr[i] < min) {
                 min = arr[i];
             }
+            System.out.print(min);
         }
-        System.out.print(min);
+
 
         // продолжение таски, поменять местами 1 и 7
         System.out.println("");

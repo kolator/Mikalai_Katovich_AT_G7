@@ -5,6 +5,7 @@ abstract class Water {
     private double transparency;
     private String smell;
     private double temperature;
+
     public Water(String color, double transparency, String smell, double temperature) {
         this.color = color;
         this.transparency = transparency;
