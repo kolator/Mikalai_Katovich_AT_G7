@@ -1,4 +1,4 @@
-package homework.task0;
+package homework.day0;
 
 public class Car {
     int maxSpeed;

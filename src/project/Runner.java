@@ -9,7 +9,7 @@ public class Runner {
         Bottle bottleOne = new Bottle(0.5);
         Bottle bottleTwo = new Bottle(1);
         Bottle bottleThree = new Bottle(1.5);
-        SparklingWater water = new SparklingWater("red", 0.5, "zbs", 25);
+        SparklingWater water = new SparklingWater("red", "05", "zbs", 25);
 
         Bubble[] bubblesOne = new Bubble[5];
         for (int i = 0; i < 5; i++) {
