@@ -2,20 +2,50 @@ package project.liquids;
 
 import project.properties.Bubble;
 
+import java.util.Arrays;
+
 public class SparklingWater extends Water {
-    public SparklingWater(String color, double transparency, String smell, double temperature) {
+    private Bubble[] bubbles;
+    private boolean isOpened;
+
+
+    public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
     }
+    public SparklingWater() {
+        this.isOpened();
+    }
 
-    private Bubble[] bubbles;
+    private void isOpened() {
+        if (isOpened) {
+            this.degas();
+        }
+    }
+
+    public void setOpened(boolean isOpened) {
+        this.isOpened = isOpened;
+    }
 
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
     }
+    public boolean isSparkle(){
+        return this.bubbles.length > 0;
+    }
+
 
     public void degas() {
-        for (int i = 0; i < this.bubbles.length; i++) {
-            this.bubbles[i].blowUp();
+     //   for (int i = 0; i < this.bubbles.length; i++) {
+     //       this.bubbles[i].cramp();
+     //   }
+        while (this.bubbles.length > 0) {
+            int part = (10 + 5 * this.getTemperature());
+            int end = this.bubbles.length >  part  ?  part :  this.bubbles.length;
+            Bubble[] degas = Arrays.copyOfRange(this.bubbles, 0, end );
+            for (int i = 0; i < degas.length; i++){
+                degas[i].cramp();
+            }
+            this.bubbles = Arrays.copyOfRange(this.bubbles, end , this.bubbles.length);
         }
     }
 }

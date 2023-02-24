@@ -3,15 +3,16 @@ package homework.day2;
 import java.time.LocalDate;
 
 public class WorkWithMassive {
-
-    int sumEveryNthElement(int[] arr, int n) {
+    //part 2.1
+    public static int sumEveryNElement(int[] arr, int n) {
         int sum = 0;
-        for (int i = n - 1; i < arr.length; i += n){
-            sum += arr[i];
+        for (int i = 0; i < arr.length; i = i + n) {
+            sum = sum + arr[i];
         }
         return sum;
     }
-    // next step
+
+    // part 2.2
     public static int[] reverseGreaterElements(int[] arr, int n) {
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -28,42 +29,22 @@ public class WorkWithMassive {
                 index++;
             }
         }
-
         return result;
     }
-    public static int[] filterAndReverse(int[] arr, int n) {
-        int[] result = new int[arr.length]; // создаем массив для результата
-        int count = 0; // счетчик для подсчета количества элементов в результирующем массиве
 
-        // проходимся по всем элементам исходного массива
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > n) { // если элемент больше n
-                result[count] = arr[i]; // добавляем его в результирующий массив
-                count++; // увеличиваем счетчик элементов в результирующем массиве
-            }
-        }
-
-        int[] finalResult = new int[count]; // создаем массив для результата нужного размера
-
-        // копируем элементы из результирующего массива в обратном порядке в новый массив
-        for (int i = count - 1, j = 0; i >= 0; i--, j++) {
-            finalResult[j] = result[i];
-        }
-
-        return finalResult; // возвращаем результирующий массив
-    }
-    public static int sumOfMultiplesOfCurrentMonth(int[] arr) {
-        int currentMonth = LocalDate.now().getMonthValue(); // получаем текущий месяц
+    // part 2.3
+    public static int sumOfCurrentMonth(int[] arr) {
+        int currentMonth = LocalDate.now().getMonthValue();
         int sum = 0;
-
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % currentMonth == 0) { // если элемент кратен текущему месяцу
-                sum += arr[i]; // добавляем его к сумме
+            if (arr[i] % currentMonth == 0) {
+                sum = sum + arr[i];
             }
         }
-
         return sum;
     }
+
+    // part 2.4
     public static void drawCow() {
         System.out.println("  ^__^");
         System.out.println("  (oo)\\_______");
@@ -71,7 +52,4 @@ public class WorkWithMassive {
         System.out.println("     ||----w |\\");
         System.out.println("     ||     ||");
     }
-
-
 }
-
