@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class WorkWithMassive {
     //part 2.1
-    public static int sumEveryNElement(int[] arr, int n) {
+    public int sumEveryNElement(int[] arr, int n) {
         int sum = 0;
         for (int i = 0; i < arr.length; i = i + n) {
             sum = sum + arr[i];
@@ -13,7 +13,7 @@ public class WorkWithMassive {
     }
 
     // part 2.2
-    public static int[] reverseGreaterElements(int[] arr, int n) {
+    public int[] reverseGreaterElements(int[] arr, int n) {
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > n) {
@@ -33,7 +33,7 @@ public class WorkWithMassive {
     }
 
     // part 2.3
-    public static int sumOfCurrentMonth(int[] arr) {
+    public int sumOfCurrentMonth(int[] arr) {
         int currentMonth = LocalDate.now().getMonthValue();
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -45,7 +45,7 @@ public class WorkWithMassive {
     }
 
     // part 2.4
-    public static void drawCow() {
+    public void drawCow() {
         System.out.println("  ^__^");
         System.out.println("  (oo)\\_______");
         System.out.println(" (__)\") ) \\/  \\");
