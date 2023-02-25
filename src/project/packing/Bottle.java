@@ -27,7 +27,7 @@ public class Bottle {
     }
 
     public void open() {
-        ((SparklingWater) this.water).setOpened(true);
+//        ((SparklingWater) this.water).setOpened(true);
     }
 
     public void warm(int temperature) {
