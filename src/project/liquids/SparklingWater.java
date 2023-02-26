@@ -12,14 +12,9 @@ public class SparklingWater extends Water {
     public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
     }
+
     public SparklingWater() {
         this.isOpened();
-    }
-
-    private void isOpened() {
-        if (isOpened) {
-            this.degas();
-        }
     }
 
     public void setOpened(boolean isOpened) {
@@ -29,23 +24,28 @@ public class SparklingWater extends Water {
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
     }
-    public boolean isSparkle(){
-        return this.bubbles.length > 0;
+
+    private void isOpened() {
+        if (isOpened) {
+            this.degas();
+        }
+    }
+
+    public boolean isSparkle() {
+        if (bubbles != null) ;
+        return true;
     }
 
 
     public void degas() {
-     //   for (int i = 0; i < this.bubbles.length; i++) {
-     //       this.bubbles[i].cramp();
-     //   }
-        while (this.bubbles.length > 0) {
+        while (isSparkle() == true) {
             int part = (10 + 5 * this.getTemperature());
-            int end = this.bubbles.length >  part  ?  part :  this.bubbles.length;
-            Bubble[] degas = Arrays.copyOfRange(this.bubbles, 0, end );
-            for (int i = 0; i < degas.length; i++){
+            int end = this.bubbles.length > part ? part : this.bubbles.length;
+            Bubble[] degas = Arrays.copyOfRange(this.bubbles, 0, end);
+            for (int i = 0; i < degas.length; i++) {
                 degas[i].cramp();
             }
-            this.bubbles = Arrays.copyOfRange(this.bubbles, end , this.bubbles.length);
+            this.bubbles = Arrays.copyOfRange(this.bubbles, end, this.bubbles.length);
         }
     }
 }
