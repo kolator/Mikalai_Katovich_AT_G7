@@ -26,12 +26,15 @@ public class Bottle {
         return water;
     }
 
-    public void open() {
+    public void setOpen() {
         SparklingWater degas;
     }
 
     public void warm(int temperature) {
         this.temperature = temperature;
         System.out.printf("Warming water to: %s", temperature).println();
+    }
+
+    public void open() {
     }
 }
