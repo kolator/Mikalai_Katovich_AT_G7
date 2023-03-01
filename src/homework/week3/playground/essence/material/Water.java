@@ -1,4 +1,6 @@
 package homework.week3.playground.essence.material;
 
-public class Water {
+import homework.week3.playground.essence.Matter;
+
+public class Water extends Matter {
 }
