@@ -1,4 +1,4 @@
 package homework.week3.playground.essence;
 
-public class Matter {
+public abstract class Matter {
 }
