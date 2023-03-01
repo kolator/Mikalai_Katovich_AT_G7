@@ -38,7 +38,7 @@ public class SparklingWater extends Water {
 
 
     public void degas() {
-        int bubblesArray[]
+        int bubblesArray[];
         while (isSparkle() == true) {
             int part = (10 + 5 * this.getTemperature());
             int end = this.bubbles.length > part ? part : this.bubbles.length;
