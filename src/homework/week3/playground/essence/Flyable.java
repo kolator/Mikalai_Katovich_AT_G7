@@ -5,6 +5,7 @@ public interface Flyable {
 
     void Mosquito();
 
-    void Fly();
-
+    void Fly(String direction) {
+        System.out.printf("I am %N, my name is %M and I'am flying to %D", getClass(), name, direction);
+    }
 }
