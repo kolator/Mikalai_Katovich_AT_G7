@@ -4,14 +4,17 @@ public abstract class Matter {
 
     protected int mass;
 
-    public Matter(int mass){
+    public Matter(int mass) {
         this.mass = mass;
     }
-   public int getMass() {
+
+    public int getMass() {
         return mass;
     }
 
     public void setMass(int mass) {
         this.mass = mass;
     }
+
+    public Matter(){}
 }

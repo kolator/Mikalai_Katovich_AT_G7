@@ -1,8 +1,7 @@
 package homework.week3.playground.essence.craft;
 
 public interface Transportable {
-    void Aircraft();
+    int move (int pointA, int pointB);
 
-    void Vehicle();
 
 }
