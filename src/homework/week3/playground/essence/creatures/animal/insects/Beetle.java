@@ -1,9 +1,13 @@
 package homework.week3.playground.essence.creatures.animal.insects;
 
+import homework.week3.playground.essence.creatures.Crawlable;
 import homework.week3.playground.essence.creatures.plant.Plants;
 import homework.week3.playground.essence.creatures.plant.vegetable.Carrot;
 
-public class Beetle extends Insects {
+public class Beetle extends Insects implements Crawlable {
+    public Beetle(int mass, String name) {
+        super(mass, name);
+    }
 
     public void nest(Carrot home) {
         if (home.getMass() / mass >= 1) {

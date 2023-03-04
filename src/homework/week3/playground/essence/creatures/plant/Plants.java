@@ -6,7 +6,7 @@ public abstract class Plants extends Matter {
 
     protected String name;
 
-    public void Plants(String name){
+    public void Plants(String name) {
         this.name = name;
     }
 

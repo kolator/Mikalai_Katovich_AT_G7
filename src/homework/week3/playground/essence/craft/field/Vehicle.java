@@ -1,11 +1,16 @@
 package homework.week3.playground.essence.craft.field;
 
 import homework.week3.playground.essence.Matter;
+import homework.week3.playground.essence.craft.Rideable;
+import homework.week3.playground.essence.craft.Transportable;
 
-abstract class Vehicle extends Matter {
+import java.awt.*;
+
+abstract class Vehicle extends Matter implements Transportable, Rideable {
     protected String name;
 
-    public Vehicle(String name){
+    public Vehicle(int mass, String name) {
+        super(mass);
         this.name = name;
     }
 
@@ -17,4 +22,8 @@ abstract class Vehicle extends Matter {
         this.name = name;
     }
 
+    public int move(int pointA, int pointB) {
+        System.out.printf("I am %s, my name is %s and moving from point %s to point %s \n", getClass().getSimpleName(), name, pointA, pointB);
+        return (pointB - pointA);
+    }
 }

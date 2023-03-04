@@ -6,7 +6,8 @@ import homework.week3.playground.essence.creatures.plant.Plants;
 public abstract class Animals extends Matter {
     protected String name;
 
-    public void Animals(String name) {
+    public Animals(int mass, String name) {
+        super(mass);
         this.name = name;
     }
 
