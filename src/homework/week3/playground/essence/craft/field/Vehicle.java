@@ -6,7 +6,7 @@ import homework.week3.playground.essence.craft.Transportable;
 
 import java.awt.*;
 
-abstract class Vehicle extends Matter implements Transportable, Rideable {
+public abstract class Vehicle extends Matter implements Transportable, Rideable {
     protected String name;
 
     public Vehicle(int mass, String name) {

@@ -9,7 +9,7 @@ public class TransportableProcessor {
     public void runTransportable(Transportable transportable, int pointA, int pointB) {
         int distance = transportable.move(pointA, pointB);
         String className = transportable.getClass().getSimpleName();
-        System.out.printf("Transportable %s was moved to %s points\n", getClass().getSimpleName(),distance);
+        System.out.printf("Transportable %s was moved to %s points\n", className,distance);
     }
 
     public void runTransportable(Transportable transportable) {
