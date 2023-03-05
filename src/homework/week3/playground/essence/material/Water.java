@@ -4,4 +4,7 @@ import homework.week3.playground.essence.Matter;
 
 public class Water extends Matter implements Pourable{
 
+    public Water(int mass) {
+        super(mass);
+    }
 }

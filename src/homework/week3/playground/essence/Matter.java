@@ -16,5 +16,4 @@ public abstract class Matter {
         this.mass = mass;
     }
 
-    public Matter(){}
 }

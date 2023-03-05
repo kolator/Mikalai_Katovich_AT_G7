@@ -3,4 +3,7 @@ package homework.week3.playground.essence.creatures.plant.vegetable;
 import homework.week3.playground.essence.creatures.plant.Plants;
 
 abstract class Vegetable extends Plants {
+    public Vegetable(int mass, String name) {
+        super(mass, name);
+    }
 }
