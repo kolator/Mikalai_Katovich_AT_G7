@@ -2,8 +2,10 @@ package homework.week3.part2;
 
 public class StringTask_1_1 {
     public static void printInColumn(String text) {
-        for (int i = 0; i < text.length(); i++) {
-            System.out.println(i);
+        char[] chars = text.toCharArray(); //получаю колкцию символов из строки
+        for (int i = 0; i < chars.length; i++) { //перечесление букв в тексте
+            System.out.println(chars[i]); //печатаю буквы из текста, каждая на новой строке
+
         }
     }
 }
