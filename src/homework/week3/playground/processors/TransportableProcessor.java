@@ -2,7 +2,6 @@ package homework.week3.playground.processors;
 
 import homework.week3.playground.essence.craft.Transportable;
 import homework.week3.playground.utils.CoordinatesGenerator;
-import homework.week3.playground.utils.DirectionGenerator;
 
 public class TransportableProcessor {
 
