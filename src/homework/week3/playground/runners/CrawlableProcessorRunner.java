@@ -6,6 +6,7 @@ import homework.week3.playground.essence.creatures.animal.insects.Beetle;
 import homework.week3.playground.essence.creatures.animal.vertebrata.Crocodile;
 import homework.week3.playground.essence.creatures.animal.vertebrata.Vertebrata;
 import homework.week3.playground.processors.CrawlableProcessor;
+import homework.week3.playground.essence.creatures.animal.insects.Insects;
 
 public class CrawlableProcessorRunner {
 
@@ -15,7 +16,7 @@ public class CrawlableProcessorRunner {
         Crawlable crawlableCrocodile = new Crocodile(1723, "Neel Crawlable");
         Crawlable crawlableBeetle = new Beetle(43, "Christmas Crawlable");
         Vertebrata vertebrataCrocodile = new Crocodile(1723, "Neel Vertebrata");
-        Insect insectBeetle = new Beetle(43, "Christmas Insect");
+        Insects insectBeetle = new Beetle(43, "Christmas Insect");
         Crocodile aCrocodile = new Crocodile(1723, "Neel Crocodile");
         Beetle aBeetle = new Beetle(43, "Christmas Beetle");
         Crawlable anonymousCrawlable = new Crawlable() {
@@ -27,6 +28,12 @@ public class CrawlableProcessorRunner {
             }
         };
 
-
+        processor.runCrawlable(crawlableCrocodile);
+        processor.runCrawlable(crawlableBeetle);
+//        processor.runCrawlable(vertebrataCrocodile);
+//        processor.runCrawlable(insectBeetle);
+        processor.runCrawlable(aCrocodile);
+        processor.runCrawlable(aBeetle);
+        processor.runCrawlable(anonymousCrawlable);
     }
 }
