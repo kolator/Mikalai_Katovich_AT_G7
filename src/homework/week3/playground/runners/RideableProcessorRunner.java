@@ -40,7 +40,7 @@ public class RideableProcessorRunner {
         processor.runRideable(aCar);
         processor.runRideable(aMoped);
         processor.runRideable(aMotorbike);
-        processor.runRideable(anonymousVehicle);
-        processor.runRideable(anonymousRideable);
+        processor.runRideable(anonymousVehicle); // ?
+        processor.runRideable(anonymousRideable); // ?
     }
 }
