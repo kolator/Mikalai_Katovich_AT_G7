@@ -17,4 +17,8 @@ public class Beetle extends Insects implements Crawlable {
             System.out.printf("This carrot is too small for nesting :(");
         }
     }
+    public void crawl (String direction){
+        System.out.printf(("I am %s, my name is %s and I am crawling to %s for %s \n" + "vz-vz-vzz-zz.. \n"), getClass().getSimpleName(), name, direction);
+        // F - ?
+    }
 }
