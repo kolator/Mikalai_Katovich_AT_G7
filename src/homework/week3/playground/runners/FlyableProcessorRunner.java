@@ -38,7 +38,7 @@ public class FlyableProcessorRunner {
         processor.runFlyable(aircraftCopter);
         processor.runFlyable(aircraftPlane);
         processor.runFlyable(aircraftRocket);
-//        processor.runFlyable(insectFly); Insects is not include method Fly
+//        processor.runFlyable(insectFly); Insects is not include method Fly - надо сделать явное приведение типа
 //        processor.runFlyable(insectMosquito); Insects is not include method Fly
         processor.runFlyable(aCopter);
         processor.runFlyable(aPlane);

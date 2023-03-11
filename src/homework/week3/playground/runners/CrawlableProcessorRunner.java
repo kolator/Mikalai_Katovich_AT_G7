@@ -30,7 +30,7 @@ public class CrawlableProcessorRunner {
 
         processor.runCrawlable(crawlableCrocodile);
         processor.runCrawlable(crawlableBeetle);
-//        processor.runCrawlable(vertebrataCrocodile);
+//        processor.runCrawlable(vertebrataCrocodile); - надо сделать явное приведение типа
 //        processor.runCrawlable(insectBeetle);
         processor.runCrawlable(aCrocodile);
         processor.runCrawlable(aBeetle);
