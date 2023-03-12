@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class StringTask_1_5 {
     public static void main(String[] args) {
+
         printCurrentDateTime();
     }
 

@@ -1,17 +1,17 @@
-package classwork;
+package classwork.day12032023;
 
-public class ObjectContainer {
-    private Object[] array = new Object[10];
+public class GenericContainer<T> {
+    private T[] array = (T[]) new Object[10];
     private int counter = 0;
 
-    public void add(Object incoming) {
+    public void add(T incoming) {
         if (counter < array.length) {
             array[counter++] = incoming;
         }
     }
 
-    public Object removeLast() {
-        Object lastObject = null;
+    public T removeLast() {
+        T lastObject = null;
         if (counter != 0) {
             lastObject = array[counter - 1];
             array[counter-- - 1] = null;
@@ -22,4 +22,5 @@ public class ObjectContainer {
     public boolean isEmpty() {
         return counter == 0;
     }
+
 }
