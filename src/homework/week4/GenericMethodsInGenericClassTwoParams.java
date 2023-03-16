@@ -1,29 +1,28 @@
 package homework.week4;
 
+import homework.playground.essence.*;
+
 public class GenericMethodsInGenericClassTwoParams<X, Y> {
 
-    public String genericMethodGenArgs(X... xArgs) {
-        int numArgs = xArgs.length;
-        StringBuilder sb = new StringBuilder("I received " + numArgs + " arguments of type: ");
-        for (X xArg : xArgs) {
-            sb.append(xArg.getClass().getSimpleName()).append(" class, ");
+    public String genericMethodGenArgs(X... xs) {
+        StringBuilder sb = new StringBuilder("I received " + xs.length + " arguments of type:");
+        for (X x : xs) {
+            sb.append(" ").append(x.getClass().getSimpleName()).append(" class,");
         }
+        sb.deleteCharAt(sb.length() - 1);
         return sb.toString();
     }
 
-    public String genericMethodGenArgs(X xArg, Y yArg) {
-        return "I received 2 arguments of type: " + xArg.getClass().getSimpleName() + " class, "
-                + yArg.getClass().getSimpleName() + " class";
+    public String genericMethodGenArgs(X x, Y y) {
+        return "I received 2 arguments of type: " + x.getClass().getSimpleName() + " class, " + y.getClass().getSimpleName() + " class";
     }
 
-    public void genericMethodHalfGenArgs(X xArg, String strArg) {
-        System.out.println("I got an object of " + xArg.getClass().getSimpleName()
-                + " class and string with " + strArg.length() + " characters");
+    public void genericMethodHalfGenArgs(X x, String s) {
+        System.out.println("I got an object of " + x.getClass().getSimpleName() + " class and string with " + s.length() + " characters");
     }
 
-    public void genericMethodHalfGenArgs(Y yArg, String strArg, int num) {
-        System.out.println("I got an object of " + yArg.getClass().getSimpleName()
-                + " class and string with " + strArg.length() + " characters and integer " + num);
+    public void genericMethodHalfGenArgs(Y y, String s) {
+        System.out.println("I got an object of " + y.getClass().getSimpleName() + " class and string with " + s.length() + " characters");
     }
 }
 
