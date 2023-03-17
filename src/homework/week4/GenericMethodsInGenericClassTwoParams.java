@@ -21,8 +21,9 @@ public class GenericMethodsInGenericClassTwoParams<X, Y> {
         System.out.println("I got an object of " + x.getClass().getSimpleName() + " class and string with " + s.length() + " characters");
     }
 
-    public void genericMethodHalfGenArgs(Y y, String s) {
-        System.out.println("I got an object of " + y.getClass().getSimpleName() + " class and string with " + s.length() + " characters");
+    public void genericMethodHalfGenArgs(X x, Y y, String s) {
+        System.out.println("I got an object of " + x.getClass().getSimpleName() + " class and " + y.getClass().getSimpleName() + " class and string with " + s.length() + " characters");
     }
+
 }
 
