@@ -1,6 +1,5 @@
 package homework.week4;
 
-import homework.playground.essence.craft.*;
 import homework.playground.essence.craft.air.Copter;
 import homework.playground.essence.craft.air.Plane;
 

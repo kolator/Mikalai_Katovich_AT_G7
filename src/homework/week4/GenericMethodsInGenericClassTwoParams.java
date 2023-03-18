@@ -1,7 +1,5 @@
 package homework.week4;
 
-import homework.playground.essence.*;
-
 public class GenericMethodsInGenericClassTwoParams<X, Y> {
 
     public String genericMethodGenArgs(X... xs) {

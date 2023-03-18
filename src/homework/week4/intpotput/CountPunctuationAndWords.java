@@ -10,7 +10,9 @@ public class CountPunctuationAndWords {
         File file = new File(fileName);
         int wordCount = 0;
         int punctuationCount = 0;
-        try (Scanner scanner = new Scanner(file)) {
+        Scanner scanner = null;
+        try {
+            scanner = new Scanner(file);
             while (scanner.hasNext()) {
                 String next = scanner.next();
                 if (next.matches("[a-zA-Z]+")) {
@@ -22,7 +24,11 @@ public class CountPunctuationAndWords {
             System.out.println("Количество слов: " + wordCount);
             System.out.println("Количество знаков препинания: " + punctuationCount);
         } catch (FileNotFoundException e) {
-            System.out.println("Файл не найден: " + fileName);
+            throw new RuntimeException(e);
+        } finally {
+            if (scanner != null) {
+                scanner.close();
+            }
         }
     }
 }
