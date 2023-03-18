@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CountPunctuationAndWords {
     public static void main(String[] args) {
-        String fileName = "text.txt"; // замените на свой путь к файлу
+        String fileName = "C:\\QA\\AQA\\text.txt";
         File file = new File(fileName);
         int wordCount = 0;
         int punctuationCount = 0;

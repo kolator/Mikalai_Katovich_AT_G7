@@ -5,12 +5,11 @@ import java.util.Random;
 
 public class CreateFiles {
     public static void main(String[] args) {
-        String rootPath = "C:/example"; // указываем корневую директорию
-        String folderName = "folder"; // имя папки
-        String fileName = "file.txt"; // имя файла
+        String rootPath = "C:\\QA\\AQA";
+        String folderName = "folder";
+        String fileName = "file.txt";
         Random random = new Random();
 
-        // создаем цепочку из 4-х вложенных папок
         File rootDir = new File(rootPath);
         if (!rootDir.exists()) {
             rootDir.mkdir();
@@ -23,7 +22,6 @@ public class CreateFiles {
             }
         }
 
-        // создаем файлы и заполняем их числами
         try {
             for (int i = 1; i <= 2; i++) {
                 File file = new File(subDir.getPath() + "/" + fileName);
@@ -32,8 +30,8 @@ public class CreateFiles {
                 }
                 FileWriter writer = new FileWriter(file);
                 for (int j = 1; j <= 10; j++) {
-                    int num = random.nextInt(100); // генерируем случайное число от 0 до 99
-                    writer.write(num + "\n"); // записываем число в файл
+                    int num = random.nextInt(100);
+                    writer.write(num + "\n");
                 }
                 writer.close();
             }
