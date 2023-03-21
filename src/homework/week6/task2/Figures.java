@@ -1,4 +1,4 @@
-package homework.week6.task1;
+package homework.week6.task2;
 
 import java.util.Arrays;
 import java.util.List;
