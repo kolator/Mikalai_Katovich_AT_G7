@@ -1,5 +1,7 @@
 package homework.week6.task00;
 
+import java.util.Objects;
+
 public class Person {
     private int age;
     private String name;
@@ -25,5 +27,22 @@ public class Person {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return age + name;
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, name);
+    }
+
+    @Override
+    public boolean equals(Object ppl) {
+        if (this == ppl) return true;
+        if (ppl == null || getClass() != ppl.getClass()) return false;
+        Person person = (Person) ppl;
+        return age == person.age && Objects.equals(name, person.name);
+    }
 }
+
