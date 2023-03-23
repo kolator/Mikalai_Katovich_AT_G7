@@ -17,7 +17,7 @@ public class Birds {
         for (String bird : birds) {
             int vowels = 0;
             for (char c : bird.toCharArray()) {
-                if ("AEIOUaeiou".indexOf(c) != -1) {
+                if ("УЕЫАОЭЯЮуеыаоэяию".indexOf(c) != -1) {
                     vowels++;
                 }
             }
