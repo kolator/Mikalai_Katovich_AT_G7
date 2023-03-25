@@ -3,7 +3,6 @@ package classwork.day25032023.collections;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Collection {
     public static void main(String[] args) {
