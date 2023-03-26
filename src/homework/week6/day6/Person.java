@@ -6,7 +6,7 @@ public class Person {
     private Sex sex;
 
     public Person(String name, int age, Sex sex){
-        this.name =name;
+        this.name = name;
         this.age = age;
         this.sex = sex;
     }
