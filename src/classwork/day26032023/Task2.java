@@ -33,7 +33,5 @@ public class Task2 {
                     }
                 }).peek(System.out::println).collect(Collectors.toList());
 
-        System.out.println(sortPeople);
-
     }
 }

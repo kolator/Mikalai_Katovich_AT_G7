@@ -38,4 +38,9 @@ public class Person {
     public void setSex(Sex sex) {
         this.sex = sex;
     }
+
+    public String toString() {
+        return "Person [Name=" + this.name + ", age=" + this.age + ", sex=" + this.sex + "]";
+    }
+
 }
